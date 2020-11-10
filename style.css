@@ -1,16 +1,57 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
 .divClass{
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 200vh;
 	background-color: rgb(0,0,0);
 	color: rgb(255,255,255);
 	padding: 20px 10px 0;
-	margin: 80px;
 	box-sizing: border-box;
+	position: relative;
+	z-index: 2;
+}
+
+.secondDiv {
+	width: 400px;
+	height: 200px;
+	background-color: yellow;
+	position: relative;
 }
 
 .spanClass{
 	width: 200px;
-	height: 200px;
-	background-color: rgb(0,0,0);
+	height: 100vh;
+	/*margin: 160px 10px 0;*/
+	background-color: rgb(255,0,0);
 	color: rgb(255,255,255);
+	display: block;
+	position: absolute;
+	left: 200px;
+	top: 100px;
+}
+
+button {
+	width: 300px;
+	height: 80px;
+	margin: 80px;
+	background-color: lightskyblue;
+	border: 2px black solid;
+	font-size: 20px;
+	text-align: center;
+	position: fixed;
+	z-index: 3;
+	top: 0;
+	right: 0;
+	left: auto;
+}
+
+button img {/*Szelektoroknál így választjuk ki */
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 16px;
+	left: 14px;
 }
